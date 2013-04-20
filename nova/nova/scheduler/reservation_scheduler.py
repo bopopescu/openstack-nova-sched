@@ -14,9 +14,10 @@
 #    under the License.
 
 """
-The FilterScheduler is for creating instances locally.
-You can customize this scheduler by specifying your own Host Filters and
-Weighing Functions.
+Reservation scheduler:
+Allows users to limit the number of VMs per host.
+Limits are specified in nova.limits conf file.
+To enable the limits, give --meta limits=true parameter to nova boot command
 """
 
 import random
