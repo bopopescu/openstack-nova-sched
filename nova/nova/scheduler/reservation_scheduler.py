@@ -377,6 +377,7 @@ class FilterScheduler(driver.Scheduler):
                 try:
                     while True:
                         host_obj = next(state_iter)
+                        print "Host state object : ", host_obj
                         current_state_dict[host_obj.host] = host_obj.num_instances
                 except StopIteration:
                     pass
