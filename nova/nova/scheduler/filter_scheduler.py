@@ -324,7 +324,6 @@ class FilterScheduler(driver.Scheduler):
         # traverse this list once. This can bite you if the hosts
         # are being scanned in a filter or weighing function.
         hosts = self.host_manager.get_all_host_states(elevated)
-
         selected_hosts = []
         if instance_uuids:
             num_instances = len(instance_uuids)
